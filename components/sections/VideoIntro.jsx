@@ -6,8 +6,8 @@ import { gsap } from '@/lib/gsap'
 import profile from '@/data/profile.json'
 import content from '@/data/content.json'
 import styles from '@/styles/sections/VideoIntro.module.css'
-
-const CinematicLayer = dynamic(() => import('@/components/three/CinematicLayer'), { ssr: false })
+import { mod } from 'three/tsl'
+const CinematicLayer = dynamic(() => import('@/components/three/CinematicLayer').then((mod) => mod.CinematicLayer), { ssr: false })
 
 function scrollNext() {
   const main = document.querySelector('main')
