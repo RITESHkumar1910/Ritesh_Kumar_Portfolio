@@ -109,6 +109,8 @@
   ],
   "socials": [
     { "label": "GitHub", "href": "https://github.com/RITESHkumar1910" },
-    { "label": "LinkedIn", "href": "https://linkedin.com/in/Ritesh-Kumar" }
+    { "label": "LinkedIn", "href": "https://linkedin.com/in/Ritesh-Kumar" },
+    { "label": "Email", "href": "mailto:igritesh9634@gmail.com"},
+    { "label": "Phone", "href": "tel:+919634696768"}
   ]
 }
