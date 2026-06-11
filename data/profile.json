@@ -1,0 +1,114 @@
+{
+  "name": {
+    "first": "Ritesh",
+    "last": "Kumar",
+    "full": "Ritesh Kumar"
+  },
+  "email": "igritesh9634@gmail.com",
+  "tagline": "Designing intelligent solutions with Machine Learning & Data Science",
+  "description": "Detail-oriented Computer Science Engineering student with expertise in Machine Learning, Predictive Analytics, Statistical Modeling, and Data Visualization. Proficient in Python, SQL, NumPy, Pandas, and Scikit-learn.",
+  "roles": {
+    "short": "Data Science Intern",
+    "detailed": "Data Science | Machine Learning | Python Developer"
+  },
+  "location": {
+    "based": "Aligarh, India",
+    "availability": "India / Remote"
+  },
+  "available": true,
+  "bio": "I am a passionate BTech CSE student at Mangalayatan University, Aligarh, specializing in Machine Learning and Data Science. I have hands-on experience building real-world ML projects like a Movie Recommendation System deployed on Render, and an AI Content Detection Tracker. Currently interning as a Data Science Intern at The Developers Arena, where I work on structured real-world projects. I am certified in Blockchain and its Applications from IIT Kharagpur (NPTEL) and have participated in multiple hackathons. My goal is to leverage AI and advanced analytics to create meaningful and measurable impact.",
+  "stats": [
+    { "value": "3+", "label": "Projects Built" },
+    { "value": "2028", "label": "Expected Graduation" },
+    { "value": "1", "label": "Deployed App" }
+  ],
+  "skills": [
+    "Python", "Machine Learning", "Data Science",
+    "NumPy", "Pandas", "Scikit-Learn",
+    "Matplotlib", "Seaborn", "SQL",
+    "Docker", "Git", "GitHub",
+    "Streamlit", "Java", "C++"
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "role": "Data Science Intern",
+      "company": "The Developers Arena",
+      "companyShort": "TDA",
+      "type": "Internship",
+      "location": "Remote",
+      "period": "Jun 2026",
+      "periodEnd": "Present",
+      "bullets": [
+        "Hands-on experience in Data Science through structured learning and real-world projects.",
+        "Completing self-paced modules with weekly task submissions and automated progress tracking.",
+        "Working on real-world project development with structured curriculum and deadlines.",
+        "Evaluation based on task completion rate, code quality, and project implementation."
+      ],
+      "desc": "Data Science internship at The Developers Arena focused on real-world project development and structured learning.",
+      "tech": ["Python", "Data Science", "Machine Learning", "Pandas", "Scikit-Learn"]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Movie Recommendation System",
+      "subtitle": "ML-Powered Content-Based Filtering",
+      "type": "Machine Learning",
+      "link": "https://movie-recommendation-system-project-pww0.onrender.com",
+      "image": "/assets/project-movie.png",
+      "tech": ["Python", "Streamlit", "Scikit-Learn", "TMDB API", "Pandas"],
+      "desc": "Developed a personalized Movie Recommendation System using ML algorithms and content-based filtering techniques. Performed data preprocessing, feature engineering, and similarity analysis on movie datasets to generate accurate recommendations. Built an interactive Streamlit UI for real-time movie suggestions based on user preferences. Integrated TMDB API for movie posters and data visualization to enhance user experience."
+    },
+    {
+      "id": 2,
+      "title": "AI Tracker",
+      "subtitle": "AI Content Detection System",
+      "type": "Machine Learning",
+      "link": "https://github.com/RITESHkumar1910",
+      "image": "/assets/project-ai.png",
+      "tech": ["Python", "Scikit-Learn", "NLP", "Pandas", "API Integration"],
+      "desc": "Developed an AI Tracker to detect and estimate AI-generated content in text, images, and LinkedIn profiles. Applied Machine Learning, NLP, and image analysis techniques for content classification and AI usage prediction. Built a user-friendly system for content authenticity assessment. Utilized Python, Scikit-learn, Pandas, and API integration for data processing and model deployment."
+    },
+    {
+      "id": 3,
+      "title": "Fake News Generator",
+      "subtitle": "Python-based Content Generator",
+      "type": "Python",
+      "link": "https://github.com/RITESHkumar1910",
+      "image": "/assets/project-fake.png",
+      "tech": ["Python"],
+      "desc": "Developed a Fake News Generator using Python to create news articles based on user-defined topics, keywords, and templates. Built an interactive interface for generating and customizing news content with real-time preview and flexible template options."
+    }
+  ],
+  "publications": [
+    {
+      "id": 1,
+      "title": "Hack & Forge: Data Science Summit",
+      "platform": "Unstop",
+      "year": "2025",
+      "link": "#",
+      "desc": "Certificate of Participation in data science-focused hackathon event, gaining exposure to real-world problem solving."
+    },
+    {
+      "id": 2,
+      "title": "DevFusion: The Developer Hackathon",
+      "platform": "Unstop",
+      "year": "2025",
+      "link": "#",
+      "desc": "Certificate of Participation as Team Leader in Round 2 General Assessment of developer hackathon."
+    },
+    {
+      "id": 3,
+      "title": "Blockchain and its Applications - NPTEL",
+      "platform": "IIT Kharagpur",
+      "year": "2026",
+      "link": "#",
+      "desc": "Successfully completed 12-week NPTEL course on Blockchain and its Applications from IIT Kharagpur."
+    }
+  ],
+  "socials": [
+    { "label": "GitHub", "href": "https://github.com/RITESHkumar1910" },
+    { "label": "LinkedIn", "href": "https://linkedin.com/in/Ritesh-Kumar" }
+  ]
+}
