@@ -6,8 +6,8 @@ import { gsap } from '@/lib/gsap'
 import profile from '@/data/profile.json'
 import content from '@/data/content.json'
 import styles from '@/styles/sections/VideoIntro.module.css'
-import { mod } from 'three/tsl'
-const CinematicLayer = dynamic(() => import('@/components/three/CinematicLayer').then((mod) => mod.CinematicLayer), { ssr: false })
+
+const CinematicLayer = dynamic(() => import('@/components/three/CinematicLayer'), { ssr: false })
 
 function scrollNext() {
   const main = document.querySelector('main')
@@ -47,7 +47,6 @@ export default function VideoIntro() {
     const v = videoRef.current
     if (!v) return
     if (typeof v.play !== 'function') return
-    // Guarantee muted on mount regardless of browser attribute handling
     v.muted = true
     const t = gsap.fromTo(v, { opacity: 0 }, { opacity: 1, duration: 1.2, ease: 'power2.out' })
     return () => t.kill()
@@ -107,9 +106,6 @@ export default function VideoIntro() {
     const v = videoRef.current
     if (!v) return
     if (typeof v.play !== 'function') return
-    // Set DOM property synchronously inside click gesture - Safari requires this.
-    // React never updates `v.muted` on re-renders (known React limitation for video),
-    // so the static `muted` attr in JSX does not fight with this.
     v.muted = !v.muted
     setMuted(v.muted)
   }
@@ -130,7 +126,7 @@ export default function VideoIntro() {
         className={styles.bgVideo}
       />
 
-      {/* 2 - Main video: static `muted` attr so React never touches the DOM property on re-renders */}
+      {/* 2 - Main video */}
       <video
         ref={videoRef}
         data-testid="intro-video"
@@ -140,7 +136,7 @@ export default function VideoIntro() {
         onPause={() => setPlaying(false)}
         onEnded={handleEnded}
         className={styles.mainVideo}
-        style={{objectPosition:"75% 29%"}}
+        style={{objectPosition:"50% 30%"}}
       />
 
       {/* 3 - Cinematic gradient overlay */}
@@ -180,13 +176,11 @@ export default function VideoIntro() {
       {false && <div className={styles.controls}>
         <button className={styles.ctrlBtn} onClick={togglePlay} aria-label={playing ? 'Pause' : 'Play'}>
           {playing
-            ? /* Pause icon */
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+            ? <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
                 <rect x="2" y="1" width="4" height="12" rx="1" />
                 <rect x="8" y="1" width="4" height="12" rx="1" />
               </svg>
-            : /* Play icon */
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+            : <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
                 <polygon points="2,1 13,7 2,13" />
               </svg>
           }
@@ -194,14 +188,12 @@ export default function VideoIntro() {
 
         <button className={styles.ctrlBtn} onClick={toggleMute} aria-label={muted ? 'Unmute' : 'Mute'}>
           {muted
-            ? /* Muted icon */
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round">
+            ? <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round">
                 <path d="M2 5.5h2.5L8 3v10l-3.5-2.5H2V5.5z" fill="currentColor" stroke="none" />
                 <line x1="10" y1="5" x2="14" y2="11" />
                 <line x1="14" y1="5" x2="10" y2="11" />
               </svg>
-            : /* Sound icon */
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round">
+            : <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round">
                 <path d="M2 5.5h2.5L8 3v10l-3.5-2.5H2V5.5z" fill="currentColor" stroke="none" />
                 <path d="M10.5 5.5C11.8 6.5 12.5 7.2 12.5 8s-.7 1.5-2 2.5" />
                 <path d="M12 3.5C14 5 15 6.4 15 8s-1 3-3 4.5" />

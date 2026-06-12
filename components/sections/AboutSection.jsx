@@ -3,16 +3,23 @@
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import { gsap } from '@/lib/gsap'
-import { FaGithub, FaLinkedinIn, FaMedium, FaInstagram, FaYoutube } from 'react-icons/fa'
+import { FaGithub, FaLinkedinIn, FaEnvelope, FaPhone } from 'react-icons/fa'
 import profile from '@/data/profile.json'
 import styles from '@/styles/sections/AboutSection.module.css'
 
-const BIO      = profile.bio
+const BIO       = profile.bio
 const WHO_ITEMS = profile.skills
 
-const ICON_MAP = { GitHub: FaGithub, LinkedIn: FaLinkedinIn, Medium: FaMedium, Instagram: FaInstagram, YouTube: FaYoutube }
+const ICON_MAP = {
+  GitHub:   FaGithub,
+  LinkedIn: FaLinkedinIn,
+  Email:    FaEnvelope,
+  Phone:    FaPhone,
+}
 
-const SOCIALS = profile.socials.map(s => ({ Icon: ICON_MAP[s.label], href: s.href, label: s.label }))
+const SOCIALS = profile.socials
+  .map(s => ({ Icon: ICON_MAP[s.label] ?? null, href: s.href, label: s.label }))
+  .filter(s => s.Icon !== null)
 
 export default function AboutSection() {
   const sectionRef  = useRef(null)
@@ -109,7 +116,7 @@ export default function AboutSection() {
               aria-label={label}
               className={styles.socialLink}
             >
-              <Icon />
+              {Icon && <Icon />}
             </a>
           ))}
         </div>
@@ -131,11 +138,11 @@ export default function AboutSection() {
           </div>
         </div>
 
-        {/* Bio text - typewriter: all chars always in DOM, only color changes */}
+        {/* Bio text */}
         <div className={styles.bioWrap}>
-    <p className={styles.bio}>
-  {BIO}
-</p>
+          <p className={styles.bio}>
+            {BIO}
+          </p>
         </div>
 
       </div>

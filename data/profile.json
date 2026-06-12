@@ -105,12 +105,28 @@
       "year": "2026",
       "link": "#",
       "desc": "Successfully completed 12-week NPTEL course on Blockchain and its Applications from IIT Kharagpur."
+    },
+    {
+      "id": 4,
+      "title": "Introduction to Artificial Intelligence",
+      "platform": "Unstop",
+      "year": "2026",
+      "link": "#",
+      "desc": "Successfully completed Introduction to Artificial Intelligence course. Certificate code: 10338422."
+    },
+    {
+      "id": 5,
+      "title": "Excel Automation using ChatGPT",
+      "platform": "Unstop",
+      "year": "2026",
+      "link": "#",
+      "desc": "Successfully completed Excel Automation using ChatGPT course. Certificate code: 10338187."
     }
   ],
   "socials": [
     { "label": "GitHub", "href": "https://github.com/RITESHkumar1910" },
     { "label": "LinkedIn", "href": "https://linkedin.com/in/Ritesh-Kumar" },
-    { "label": "Email", "href": "mailto:igritesh9634@gmail.com"},
-    { "label": "Phone", "href": "tel:+919634696768"}
+    { "label": "Email", "href": "mailto:igritesh9634@gmail.com" },
+    { "label": "Phone", "href": "tel:+919634696768" }
   ]
 }

@@ -12,14 +12,13 @@ import profile from '@/data/profile.json'
 import styles from '@/styles/ui/Navbar.module.css'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
-// idx matches snap position in page.js (0=video,1=hero,2=about,3-4=projects,5=work-exp,6=publications,7=footer)
+// idx matches snap position in page.js (0=video,1=hero,2=about,3-5=projects,6=work-exp,7=publications/footer)
 const NAV_ITEMS = [
-  { label: 'Home',       idx: 0 },
-  { label: 'About',      idx: 2 },
-  { label: 'Projects',   idx: 3 },
-  { label: 'Experience', idx: 5 },
-  { label: 'Certificates', idx: 6 },
-  { label: 'Contact',    idx: 7 },
+  { label: 'Home',         idx: 0 },
+  { label: 'About',        idx: 2 },
+  { label: 'Projects',     idx: 3 },
+  { label: 'Experience',   idx: 6 },
+  { label: 'Certificates', idx: 7 },
 ]
 
 function getIST() {
@@ -33,7 +32,7 @@ function getIST() {
 }
 
 export default function Navbar() {
-  const [time,    setTime]    = useState('')   // '' on SSR - avoids hydration mismatch
+  const [time,    setTime]    = useState('')
   const [onIntro, setOnIntro] = useState(true)
   const [onDark,  setOnDark]  = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
@@ -42,7 +41,7 @@ export default function Navbar() {
   const hidden      = useRef(false)
   const stopTimer   = useRef(null)
 
-  // Live clock - set immediately on mount, then every second
+  // Live clock
   useEffect(() => {
     setTime(getIST())
     const id = setInterval(() => setTime(getIST()), 1000)
@@ -77,7 +76,6 @@ export default function Navbar() {
 
       lastY.current = currentY
 
-      // Show navbar 400 ms after scrolling stops
       clearTimeout(stopTimer.current)
       stopTimer.current = setTimeout(showNavbar, 400)
     }
