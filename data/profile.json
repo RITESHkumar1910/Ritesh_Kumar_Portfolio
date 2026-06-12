@@ -18,16 +18,35 @@
   "available": true,
   "bio": "I am a passionate BTech CSE student at Mangalayatan University, Aligarh, specializing in Machine Learning and Data Science. I have hands-on experience building real-world ML projects like a Movie Recommendation System deployed on Render, and an AI Content Detection Tracker. Currently interning as a Data Science Intern at The Developers Arena, where I work on structured real-world projects. I am certified in Blockchain and its Applications from IIT Kharagpur (NPTEL) and have participated in multiple hackathons. My goal is to leverage AI and advanced analytics to create meaningful and measurable impact.",
   "stats": [
-    { "value": "3+", "label": "Projects Built" },
-    { "value": "2028", "label": "Expected Graduation" },
-    { "value": "1", "label": "Deployed App" }
+    {
+      "value": "3+",
+      "label": "Projects Built"
+    },
+    {
+      "value": "2028",
+      "label": "Expected Graduation"
+    },
+    {
+      "value": "1",
+      "label": "Deployed App"
+    }
   ],
   "skills": [
-    "Python", "Machine Learning", "Data Science",
-    "NumPy", "Pandas", "Scikit-Learn",
-    "Matplotlib", "Seaborn", "SQL",
-    "Docker", "Git", "GitHub",
-    "Streamlit", "Java", "C++"
+    "Python",
+    "Machine Learning",
+    "Data Science",
+    "NumPy",
+    "Pandas",
+    "Scikit-Learn",
+    "Matplotlib",
+    "Seaborn",
+    "SQL",
+    "Docker",
+    "Git",
+    "GitHub",
+    "Streamlit",
+    "Java",
+    "C++"
   ],
   "experience": [
     {
@@ -46,7 +65,13 @@
         "Evaluation based on task completion rate, code quality, and project implementation."
       ],
       "desc": "Data Science internship at The Developers Arena focused on real-world project development and structured learning.",
-      "tech": ["Python", "Data Science", "Machine Learning", "Pandas", "Scikit-Learn"]
+      "tech": [
+        "Python",
+        "Data Science",
+        "Machine Learning",
+        "Pandas",
+        "Scikit-Learn"
+      ]
     }
   ],
   "projects": [
@@ -57,7 +82,13 @@
       "type": "Machine Learning",
       "link": "https://movie-recommendation-system-project-pww0.onrender.com",
       "image": "/assets/project-movie.png",
-      "tech": ["Python", "Streamlit", "Scikit-Learn", "TMDB API", "Pandas"],
+      "tech": [
+        "Python",
+        "Streamlit",
+        "Scikit-Learn",
+        "TMDB API",
+        "Pandas"
+      ],
       "desc": "Developed a personalized Movie Recommendation System using ML algorithms and content-based filtering techniques. Performed data preprocessing, feature engineering, and similarity analysis on movie datasets to generate accurate recommendations. Built an interactive Streamlit UI for real-time movie suggestions based on user preferences. Integrated TMDB API for movie posters and data visualization to enhance user experience."
     },
     {
@@ -67,7 +98,13 @@
       "type": "Machine Learning",
       "link": "https://github.com/RITESHkumar1910",
       "image": "/assets/project-ai.png",
-      "tech": ["Python", "Scikit-Learn", "NLP", "Pandas", "API Integration"],
+      "tech": [
+        "Python",
+        "Scikit-Learn",
+        "NLP",
+        "Pandas",
+        "API Integration"
+      ],
       "desc": "Developed an AI Tracker to detect and estimate AI-generated content in text, images, and LinkedIn profiles. Applied Machine Learning, NLP, and image analysis techniques for content classification and AI usage prediction. Built a user-friendly system for content authenticity assessment. Utilized Python, Scikit-learn, Pandas, and API integration for data processing and model deployment."
     },
     {
@@ -77,7 +114,9 @@
       "type": "Python",
       "link": "https://github.com/RITESHkumar1910",
       "image": "/assets/project-fake.png",
-      "tech": ["Python"],
+      "tech": [
+        "Python"
+      ],
       "desc": "Developed a Fake News Generator using Python to create news articles based on user-defined topics, keywords, and templates. Built an interactive interface for generating and customizing news content with real-time preview and flexible template options."
     }
   ],
@@ -87,7 +126,7 @@
       "title": "Hack & Forge: Data Science Summit",
       "platform": "Unstop",
       "year": "2025",
-      "link": "#",
+      "link": "https://unstop.com/certificate-preview/45bc67f7-c248-43ac-a6da-004887aa5e83",
       "desc": "Certificate of Participation in data science-focused hackathon event, gaining exposure to real-world problem solving."
     },
     {
@@ -95,7 +134,7 @@
       "title": "DevFusion: The Developer Hackathon",
       "platform": "Unstop",
       "year": "2025",
-      "link": "#",
+      "link": "https://unstop.com/certificate-preview/41706714-6669-44ac-84af-61c9458129f3",
       "desc": "Certificate of Participation as Team Leader in Round 2 General Assessment of developer hackathon."
     },
     {
@@ -103,15 +142,15 @@
       "title": "Blockchain and its Applications - NPTEL",
       "platform": "IIT Kharagpur",
       "year": "2026",
-      "link": "#",
+      "link": "https://drive.google.com/file/d/1QzcMDMmoDkdGAchtwi3j_pZjSzsfcmtG/view?usp=drivesdk",
       "desc": "Successfully completed 12-week NPTEL course on Blockchain and its Applications from IIT Kharagpur."
     },
     {
       "id": 4,
       "title": "Introduction to Artificial Intelligence",
-      "platform": "Unstop",
+      "platform": "Simplilearn",
       "year": "2026",
-      "link": "#",
+      "link": "https://certificates.simplicdn.net/share/10338422_10642663_1781250669999.png",
       "desc": "Successfully completed Introduction to Artificial Intelligence course. Certificate code: 10338422."
     },
     {
@@ -119,14 +158,26 @@
       "title": "Excel Automation using ChatGPT",
       "platform": "Unstop",
       "year": "2026",
-      "link": "#",
+      "link": "https://certificates.simplicdn.net/share/10338187_10642663_1781246826960.png",
       "desc": "Successfully completed Excel Automation using ChatGPT course. Certificate code: 10338187."
     }
   ],
   "socials": [
-    { "label": "GitHub", "href": "https://github.com/RITESHkumar1910" },
-    { "label": "LinkedIn", "href": "https://linkedin.com/in/Ritesh-Kumar" },
-    { "label": "Email", "href": "mailto:igritesh9634@gmail.com" },
-    { "label": "Phone", "href": "tel:+919634696768" }
+    {
+      "label": "GitHub",
+      "href": "https://github.com/RITESHkumar1910"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://linkedin.com/in/Ritesh-Kumar"
+    },
+    {
+      "label": "Email",
+      "href": "mailto:igritesh9634@gmail.com"
+    },
+    {
+      "label": "Phone",
+      "href": "tel:+919634696768"
+    }
   ]
 }
