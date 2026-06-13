@@ -38,7 +38,7 @@ export const metadata = {
   description,
   keywords: [
     'Ritesh kumar',
-    'Control-M SME',
+    'ML',
     'Control-M Administrator',
     'Production Support',
     'Application L3 Support',
@@ -46,7 +46,7 @@ export const metadata = {
     'Batch Scheduling',
     'ITIL',
     'UiPath RPA',
-    'Singapore',
+    'India',
   ],
   authors: [{ name: 'Ritesh Kumar', url: SITE_URL }],
   creator: 'Ritesh kumar',
@@ -90,7 +90,7 @@ export const metadata = {
       { url: '/favicons/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
       { url: '/favicons/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
       { url: '/favicons/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
-      { url: '/favicons/favicon.ico', sizes: 'any' },
+      { url: '/favicons/favicon.png', sizes: 'any' },
     ],
     apple: [
       { url: '/favicons/apple-touch-icon.png' },
