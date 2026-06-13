@@ -27,48 +27,48 @@ const dancing = Dancing_Script({
 });
 
 const description =
-  'Control-M SME and production support specialist with 15+ years across enterprise workload automation, ITSM, RPA, and AI-assisted operations.';
+  'Data Scientist and ML Engineer specializing in Machine Learning, AI, and Data Science solutions.';
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Ritesh Kumar | Data scientist',
+    default: 'Ritesh Kumar | Data Scientist',
     template: '%s | Ritesh Kumar',
   },
   description,
   keywords: [
-    'Ritesh kumar',
-    'ML',
-    'Control-M Administrator',
-    'Production Support',
-    'Application L3 Support',
-    'Agentic AI Automation',
-    'Batch Scheduling',
-    'ITIL',
-    'UiPath RPA',
+    'Ritesh Kumar',
+    'Data Scientist',
+    'Machine Learning',
+    'AI Engineer',
+    'Python',
+    'Deep Learning',
+    'Data Science',
+    'Streamlit',
+    'Scikit-learn',
     'India',
   ],
   authors: [{ name: 'Ritesh Kumar', url: SITE_URL }],
-  creator: 'Ritesh kumar',
+  creator: 'Ritesh Kumar',
   openGraph: {
     type: 'website',
-    locale: 'en_SG',
+    locale: 'en_IN',
     url: SITE_URL,
     siteName: 'Ritesh Kumar',
-    title: 'Ritesh Kumar | Control-M SME',
+    title: 'Ritesh Kumar | Data Scientist',
     description,
     images: [
       {
         url: '/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Ritesh Kumar | Control-M SME Portfolio',
+        alt: 'Ritesh Kumar | Data Scientist Portfolio',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ritesh Kumar | Control-M SME',
+    title: 'Ritesh Kumar | Data Scientist',
     description,
     images: ['/opengraph-image'],
   },
@@ -122,8 +122,8 @@ export default function RootLayout({ children }) {
               email: 'igritesh9634@gmail.com',
               jobTitle: 'Data Scientist',
               sameAs: [
-                'https://ctm-log-analyzer.netlify.app/',
-                'https://www.linkedin.com/feed/update/urn:li:activity:7453443679396003840/',
+                'https://github.com/RITESHkumar1910',
+                'https://www.linkedin.com/in/ritesh-kumar-ml/',
               ],
             }),
           }}
