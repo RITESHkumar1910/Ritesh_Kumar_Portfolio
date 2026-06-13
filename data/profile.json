@@ -81,7 +81,7 @@
       "subtitle": "ML-Powered Content-Based Filtering",
       "type": "Machine Learning",
       "link": "https://movie-recommendation-system-project-pww0.onrender.com",
-      "image": "/assets/project-movie.png",
+      "image": "/assets/project-movie.jpeg",
       "tech": [
         "Python",
         "Streamlit",
@@ -97,7 +97,7 @@
       "subtitle": "AI Content Detection System",
       "type": "Machine Learning",
       "link": "https://github.com/RITESHkumar1910",
-      "image": "/assets/project-ai.png",
+      "image": "/assets/project-ai.jpeg",
       "tech": [
         "Python",
         "Scikit-Learn",
@@ -113,7 +113,7 @@
       "subtitle": "Python-based Content Generator",
       "type": "Python",
       "link": "https://github.com/RITESHkumar1910",
-      "image": "/assets/project-fake.png",
+      "image": "/assets/project-fake.jpeg",
       "tech": [
         "Python"
       ],
@@ -160,6 +160,14 @@
       "year": "2026",
       "link": "https://certificates.simplicdn.net/share/10338187_10642663_1781246826960.png",
       "desc": "Successfully completed Excel Automation using ChatGPT course. Certificate code: 10338187."
+    },
+    {
+      "id": 6,
+      "title": "Machine Learning Using Python",
+      "platform": "Simplilearn",
+      "year": "2026",
+      "link": "https://certificates.simplicdn.net/share/10340873_10645688_1781303336296.png",
+      "desc": "Successfully completed Machine Learning Using Python course on SkillUp by Simplilearn. Certificate code: 10340873."
     }
   ],
   "socials": [
